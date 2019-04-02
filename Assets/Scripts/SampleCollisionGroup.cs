@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class SampleCollisionGroup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    public static List<SampleCollision> group = new List<SampleCollision>();
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        for (int i = 0; i < group.Count; i++)
+        {
+            for (int j = i + 1; j < group.Count; j++)
+            {
 
+            }
+        }
     }
 }
